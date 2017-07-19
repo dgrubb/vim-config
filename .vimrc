@@ -22,6 +22,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'      " Specify vim's package manager
 Plugin 'scrooloose/nerdtree'    " File explorer plugin
+" N.B: To add JS error checking first install NodeJS, followed by JSHint:
+" npm -g install jshint
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
 
