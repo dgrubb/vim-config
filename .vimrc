@@ -51,7 +51,7 @@ set tabstop=4                           " Tab width
 set shiftwidth=4                        " Spaces (as tabs) width
 set cursorline                          " Highlight current line
 set hlsearch                            " Highlight searches
-filetype indent on                      " Insert correct indents on newline
+filetype plugin indent on               " Insert correct indents on newline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Personally prefered key-bindings
