@@ -71,8 +71,13 @@ map <2-LeftMouse> g]<CR>                            " Search for symbol in ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Highlight 80 characters
-:au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+
+" This is for vim versions <7.3:
+" :au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+" :au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+
+" 7.3 onwards has this functionality built in:
+let &colorcolumn=join(range(81,999),",")
 
 " Check for syntax errors when opening and saving a file
 let g:syntastic_always_populate_loc_list = 1
