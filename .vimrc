@@ -57,7 +57,7 @@ filetype indent on                      " Insert correct indents on newline
 " Personally prefered key-bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nmap <F2> :NERDTreeToggle<CR> :TagbarToggle<CR>
+nmap <F2> :NERDTreeToggle <bar> :TagbarToggle<CR>   " F2: open sidebars
 nmap <F3> :tabnew<CR>                               " F3: open a new tab
 nmap <F4> :%s/\s\+$//<CR>                           " F4: expunge trailing whitespace
 nnoremap <F5> :set expandtab!<CR>                   " F5: Toggle spaces/tabs
