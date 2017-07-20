@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 " npm -g install jshint
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
+
 " N.B: YCM requires a manual installation step. After running PluginInstall 
 " descend into its installation directory and run the install script to build
 " its binary components. E.g.,:
@@ -37,8 +38,34 @@ Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
 "  apt-get install build-essential cmake python-dev python3-dev
 Plugin 'Valloric/YouCompleteMe' " Auto-completion engine
 Plugin 'ternjs/tern_for_vim'    " JS code analysis engine
-" See http://www.theendian.com/blog/javascript-autocomplete-in-vim-for-jquery
-" for more information about project specfic library inclusion
+" After installing tern and YCM make the following configurations:
+"
+" 1) Add a .jshintrc at the root of a project containing:
+"
+" {
+"       "esversion": 6
+" }
+"
+" This prevents warnings related to writing ES6 code (e.g., using const).
+"
+" 2) Add a .tern-project file to the root of the project containing:
+"
+" {
+"   "libs": [],
+"   "loadEagerly": [
+"       "./js/third-party/underscore.js",
+"       "./js/third-party/jquery-3.1.1.js"
+"   ],
+"   "plugins": {
+"       "requirejs": {
+"           "baseURL": "./",
+"           "paths": {}
+"       }
+"   }
+" }
+"
+" This allows for YouCompleteMe to use symbols defined in included libraries.
+
 
 call vundle#end()
 
