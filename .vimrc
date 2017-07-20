@@ -26,6 +26,19 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 " npm -g install jshint
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
+" N.B: YCM requires a manual installation step. After running PluginInstall 
+" descend into its installation directory and run the install script to build
+" its binary components. E.g.,:
+" $ cd $HOME/.vim/bundle/YouCompleteMe
+" $ ./install.py --tern-completer --clang-completer
+" --term-completer allows for NodeJS integration, required for JS autocomplete
+" --clang-completer allows for C-style autocompletion
+"  Required packages:
+"  apt-get install build-essential cmake python-dev python3-dev
+Plugin 'Valloric/YouCompleteMe' " Auto-completion engine
+Plugin 'ternjs/tern_for_vim'    " JS code analysis engine
+" See http://www.theendian.com/blog/javascript-autocomplete-in-vim-for-jquery
+" for more information about project specfic library inclusion
 
 call vundle#end()
 
