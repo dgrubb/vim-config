@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 " npm -g install jshint
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
+Plugin 'rust-lang/rust.vim'     " Add Rust language assistance
 
 " N.B: YCM requires a manual installation step. After running PluginInstall 
 " descend into its installation directory and run the install script to build
