@@ -2,6 +2,9 @@
 
 My .vimrc preferences file. This config is checked out and automatically installed by running my [install-packages script](https://github.com/dgrubb/install-package) which also takes care of the prerequisites.
 
+
+![VIM Screenshot](./vim-screenshot.png)
+
 ## Features
 
 Enables the following:
