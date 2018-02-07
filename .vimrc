@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
 Plugin 'rust-lang/rust.vim'     " Add Rust language assistance
+" For TarBar support of Rust see notes at: https://github.com/majutsushi/tagbar/wiki#rust
 
 " N.B: YCM requires a manual installation step. After running PluginInstall 
 " descend into its installation directory and run the install script to build
