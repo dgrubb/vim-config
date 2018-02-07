@@ -27,9 +27,8 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
 Plugin 'rust-lang/rust.vim'     " Add Rust language assistance
-" For TarBar support of Rust see notes at: https://github.com/majutsushi/tagbar/wiki#rust
 
-" N.B: YCM requires a manual installation step. After running PluginInstall 
+" N.B: YCM requires a manual installation step. After running PluginInstall
 " descend into its installation directory and run the install script to build
 " its binary components. E.g.,:
 " $ cd $HOME/.vim/bundle/YouCompleteMe
@@ -132,3 +131,21 @@ let g:syntastic_check_on_wq = 0
 " Auto-close the preview window with function information after I'm done using it
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+
+" For TarBar support of Rust, see notes for configuring ctags
+" at: https://github.com/majutsushi/tagbar/wiki#rust
+let g:tagbar_type_rust = {
+    \ 'ctagstype' : 'rust',
+    \ 'kinds' : [
+        \'T:types,type definitions',
+        \'f:functions,function definitions',
+        \'g:enum,enumeration names',
+        \'s:structure names',
+        \'m:modules,module names',
+        \'c:consts,static constants',
+        \'t:traits',
+        \'i:impls,trait implementations',
+    \]
+\}
+
