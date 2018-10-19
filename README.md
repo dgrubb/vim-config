@@ -18,6 +18,7 @@ Enables the following:
 * Sets tab-width of 4 spaces and shortcut for toggling between tabs and spaces and sets a shortcut for clearing trailing whitespace.
 * Highlights 80-character line length.
 * Displays tabs, newlines, highlights current line, syntax highlighting and line numbers.
+* Language support for Kotlin and Rust.
 
 ## Requirements
 
