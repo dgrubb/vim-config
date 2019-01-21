@@ -26,8 +26,8 @@ Plugin 'scrooloose/nerdtree'    " File explorer plugin
 " npm -g install jshint
 Plugin 'scrooloose/syntastic'   " External syntax checking plugin
 Plugin 'majutsushi/tagbar'      " Function and property listing in a side-bar
-Plugin 'rust-lang/rust.vim'     " Add Rust language assistance
-Plugin 'udalov/kotlin-vim'      " Add Kotlin language assistance
+" Plugin 'rust-lang/rust.vim'     " Add Rust language assistance
+" Plugin 'udalov/kotlin-vim'      " Add Kotlin language assistance
 
 " N.B: YCM requires a manual installation step. After running PluginInstall
 " descend into its installation directory and run the install script to build
@@ -38,8 +38,8 @@ Plugin 'udalov/kotlin-vim'      " Add Kotlin language assistance
 " --clang-completer allows for C-style autocompletion
 "  Required packages:
 "  apt-get install build-essential cmake python-dev python3-dev
-Plugin 'Valloric/YouCompleteMe' " Auto-completion engine
-Plugin 'ternjs/tern_for_vim'    " JS code analysis engine
+" Plugin 'Valloric/YouCompleteMe' " Auto-completion engine
+" Plugin 'ternjs/tern_for_vim'    " JS code analysis engine
 " After installing tern and YCM make the following configurations:
 "
 " 1) Add a .jshintrc at the root of a project containing:
@@ -136,17 +136,17 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " For TarBar support of Rust, see notes for configuring ctags
 " at: https://github.com/majutsushi/tagbar/wiki#rust
-let g:tagbar_type_rust = {
-    \ 'ctagstype' : 'rust',
-    \ 'kinds' : [
-        \'T:types,type definitions',
-        \'f:functions,function definitions',
-        \'g:enum,enumeration names',
-        \'s:structure names',
-        \'m:modules,module names',
-        \'c:consts,static constants',
-        \'t:traits',
-        \'i:impls,trait implementations',
-    \]
-\}
+" let g:tagbar_type_rust = {
+"    \ 'ctagstype' : 'rust',
+"    \ 'kinds' : [
+"        \'T:types,type definitions',
+"        \'f:functions,function definitions',
+"        \'g:enum,enumeration names',
+"        \'s:structure names',
+"        \'m:modules,module names',
+"        \'c:consts,static constants',
+"        \'t:traits',
+"        \'i:impls,trait implementations',
+"    \]
+"\}
 
